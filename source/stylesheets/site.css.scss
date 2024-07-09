@@ -22,3 +22,26 @@ a {
   margin-bottom: 1rem;
   width: 10rem;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.header {
+  
+  color: white;
+  margin: 2em auto 2em;
+}
+
+#header-fixed {
+  position: fixed;
+  margin-top: 0;
+  width: 100%;
+}
