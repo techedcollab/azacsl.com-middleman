@@ -5,6 +5,21 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# Automatic reload changes to the website
+
+activate :livereload
+
+# Automattic clowncar image sizes on website
+
+activate :automatic_clowncar,
+  :sizes => {
+    :small => 200,
+    :medium => 400,
+    :large => 600
+  },
+  :namespace_directory => %w(photos),
+  :filetypes => [:jpg, :jpeg, :png]
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
