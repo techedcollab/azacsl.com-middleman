@@ -161,7 +161,7 @@ DEPENDENCIES
   middleman-automatic-clowncar (~> 4.0, >= 4.0.5)
   middleman-autoprefixer (~> 3.0)
   middleman-livereload (~> 3.4, >= 3.4.7)
-  rubocop (~> 1.64, >= 1.64.1)
+  rubocop (~> 1.65)
   terser (~> 1.1)
   tzinfo-data
   wdm (~> 0.1)
