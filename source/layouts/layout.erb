@@ -11,12 +11,35 @@
     <%= javascript_include_tag "site" %>
   </head>
   <header>
-    <%= render "layouts/header" %>
+    <h2>Come by and take a tour.</h2>
+    <p>Copyright © 2021-2024 TEC</p>
+    <div class="header" id="header-fixed">
+      <p>Home</p>
+      <p>About</p>
+      <p>Calendar</p>
+      <p>Projects</p>
+      <p>Podcasts</p>
+      <p>Contact</p>
+    </div>
   </header>
   <body>
     <%= yield %>
   </body>
   <footer>
-    <%= render "layouts/footer" %>
+    <p>We look forward to seeing you soon!</p>
+    <p>Located at
+    GateWay Community College
+    Washington Campus
+    Room MA 2108
+    108 N. 40th St,
+    Phoenix, AZ 85034</p>
+    <div class="footer">
+      <p>Home</p>
+      <p>About</p>
+      <p>Calendar</p>
+      <p>Projects</p>
+      <p>Podcasts</p>
+      <p>Contact</p>
+    </div>
   </footer>
 </html>
