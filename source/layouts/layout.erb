@@ -10,10 +10,9 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <header>
-    <h2>Come by and take a tour.</h2>
-    <p>Copyright © 2021-2024 TEC</p>
-    <div class="header" id="header-fixed">
+  <header class="header" id="header-fixed">
+    <h2>Advanced Cyber Systems Lab</h2>
+    <div class="item1">
       <p>Home</p>
       <p>About</p>
       <p>Calendar</p>
@@ -25,7 +24,8 @@
   <body>
     <%= yield %>
   </body>
-  <footer>
+  <footer class="footer">
+    <div>
     <p>We look forward to seeing you soon!</p>
     <p>Located at
     GateWay Community College
@@ -33,7 +33,9 @@
     Room MA 2108
     108 N. 40th St,
     Phoenix, AZ 85034</p>
-    <div class="footer">
+    <p>Copyright © 2021-2024 TEC</p>
+    </div>
+    <div>
       <p>Home</p>
       <p>About</p>
       <p>Calendar</p>
