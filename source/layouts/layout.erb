@@ -11,37 +11,39 @@
     <%= javascript_include_tag "site" %>
   </head>
   <header class="header" id="header-fixed">
-    <h2>Advanced Cyber Systems Lab</h2>
-    <div class="item1">
-      <p>Home</p>
-      <p>About</p>
-      <p>Calendar</p>
-      <p>Projects</p>
-      <p>Podcasts</p>
-      <p>Contact</p>
-    </div>
+    <nav class="nav">
+      <h2>Advanced Cyber Systems Lab</h2>
+      <div class="item1">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Calendar</a>
+        <a href="">Projects</a>
+        <a href="">Podcasts</a>
+        <a href="">Contact</a>
+      </div>
+    </nav>
   </header>
-  <body>
+  <body class="body">
     <%= yield %>
   </body>
   <footer class="footer">
     <div>
     <p>We look forward to seeing you soon!</p>
-    <p>Located at
-    GateWay Community College
-    Washington Campus
-    Room MA 2108
-    108 N. 40th St,
+    <p>Located at:<br>
+    GateWay Community College<br>
+    Washington Campus<br>
+    Room MA 2108<br>
+    108 N. 40th St,<br>
     Phoenix, AZ 85034</p>
     <p>Copyright © 2021-2024 TEC</p>
     </div>
     <div>
-      <p>Home</p>
-      <p>About</p>
-      <p>Calendar</p>
-      <p>Projects</p>
-      <p>Podcasts</p>
-      <p>Contact</p>
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Calendar</a>
+      <a href="">Projects</a>
+      <a href="">Podcasts</a>
+      <a href="">Contact</a>
     </div>
   </footer>
 </html>
