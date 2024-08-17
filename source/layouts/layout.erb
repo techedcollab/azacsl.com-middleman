@@ -10,23 +10,23 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <header class="header" id="header-fixed">
-    <nav class="nav">
-      <h2>Advanced Cyber Systems Lab</h2>
-      <div class="item1">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Calendar</a>
-        <a href="">Projects</a>
-        <a href="">Podcasts</a>
-        <a href="">Contact</a>
-      </div>
-    </nav>
+  <header id="header-fixed">
+    <h2>Advanced Cyber Systems Lab</h2>
+      <nav class="nav" id="item1">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Calendar</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Podcasts</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
   </header>
-  <body class="body">
+  <body>
     <%= yield %>
   </body>
-  <footer class="footer">
+  <footer>
     <div>
     <p>We look forward to seeing you soon!</p>
     <p>Located at:<br>
