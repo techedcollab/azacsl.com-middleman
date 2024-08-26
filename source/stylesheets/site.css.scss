@@ -1,16 +1,16 @@
 body {
   display: grid;
-  place-items: center;
-  grid-template-columns: repeat(auto-fill, 4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "main main main main";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-start: 2;
+  grid-column-end: 3;
   background-color: #f6f7f6;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Lato",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding-top: 60px;
+  padding-top: 200px;
 }
 
 a {
@@ -22,33 +22,33 @@ a {
   }
 }
 
+main {
+  display: grid;
+  grid-template-areas: "main";
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
 footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "footer footer footer footer";
+  grid-template-areas: "footer footer footer";
   grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 5;
-  grid-row-end: 5;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 4;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: #f6f7f6;
   color: #333;
   text-align: left;
-  justify-content: space-between;
-  padding: 0em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
 }
 
 header {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 50px;
-  grid-template-rows: 50px;
-  grid-template-areas: "nav nav nav nav";
-  grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-gap: 10px;
+  grid-template-rows: 10px;
   font-family:"Oswald", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
   'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #f6f7f6;
@@ -57,13 +57,13 @@ header {
 
 #header-fixed {
   width: 100%;
-  padding: 0em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
   position: fixed;
   top: 0;
 }
 
 #item1 {
-  text-align: left;
+  text-align: center;
 }
 
 .nav {

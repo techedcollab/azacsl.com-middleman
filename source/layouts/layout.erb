@@ -10,8 +10,9 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <header id="header-fixed">
-    <h2>Advanced Cyber Systems Lab</h2>
+  <body>
+    <header id="header-fixed">
+    <h1>Advanced Cyber Systems Lab</h1>
       <nav class="nav" id="item1">
         <ul>
           <li><a href="/index.html">Home</a></li>
@@ -23,11 +24,11 @@
         </ul>
       </nav>
   </header>
-  <body>
+  <main>
     <%= yield %>
-  </body>
+  </main>
   <footer>
-    <div>
+  <div>
     <p>We look forward to seeing you soon!</p>
     <p>Located at:<br>
     GateWay Community College<br>
@@ -46,4 +47,5 @@
       <a href="/contact.html">Contact</a>
     </div>
   </footer>
+  </body>
 </html>
