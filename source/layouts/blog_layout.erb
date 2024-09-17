@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body>
+    <header id="header-fixed">
+    <h1>Advanced Cyber Systems Lab</h1>
+      <nav class="nav" id="item1">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/calendar.html">Calendar</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/podcasts.html">Podcasts</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+  <footer>
+  <div>
+    <p>We look forward to seeing you soon!</p>
+    <p>Located at:<br>
+    GateWay Community College<br>
+    Washington Campus<br>
+    Room MA 2108<br>
+    108 N. 40th St,<br>
+    Phoenix, AZ 85034</p>
+    <p>Copyright © 2021-2024 TEC</p>
+    </div>
+    <div>
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/calendar.html">Calendar</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/podcasts.html">Podcasts</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </footer>
+  </body>
+</html>

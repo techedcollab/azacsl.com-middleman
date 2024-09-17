@@ -13,6 +13,7 @@ activate :livereload
 
 activate :blog do |blog|
   blog.permalink = 'blog/{title}.html'
+  blog.layout = 'blog_layout.erb'
 end
 
 # Automattic clowncar image sizes on website
