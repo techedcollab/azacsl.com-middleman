@@ -11,7 +11,11 @@ gem 'rubocop', '~> 1.65', groups: [:development, :test]
 gem 'middleman-livereload', '~> 3.4', '>= 3.4.7'
 # gem for making automatic responsive images
 gem 'middleman-automatic-clowncar', '~> 4.0', '>= 4.0.5'
+# gem to enable blogging functionality
+gem 'middleman-blog', '~> 4.0.3'
 # gem Strscan provides lexical scanning and analysis
 gem 'strscan', '~> 3.1'
 # gem to implement libsass
 gem 'sassc', '~> 2.4'
+# gem bundler
+gem 'bundler', '~> 2.2.33'

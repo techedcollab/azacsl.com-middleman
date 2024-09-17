@@ -9,6 +9,12 @@ end
 
 activate :livereload
 
+# Activate blog section for Middleman and rules blog posts adhere too
+
+activate :blog do |blog|
+  blog.permalink = 'blog/{title}.html'
+end
+
 # Automattic clowncar image sizes on website
 
 activate :automatic_clowncar,
