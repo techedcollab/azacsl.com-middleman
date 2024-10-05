@@ -77,3 +77,19 @@ footer {
   height: 70px;
   padding: 10px 0 10px 0;
 }
+
+button {
+  display: inline-block;
+  font-weight: bold;
+  padding: 6px 14px;
+  border: 2px solid #030303;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #cd5928;
+  text-transform: none;
+  &:hover,
+  &:focus {
+    color:#cd5928;
+    background-color: #030303;
+  }
+}
