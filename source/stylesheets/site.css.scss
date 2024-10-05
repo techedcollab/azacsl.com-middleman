@@ -10,12 +10,12 @@ body {
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding-top: 200px;
+  padding-top: 5vh;
 }
 
 a {
   color: rgba(#333, 0.7);
-
+  text-decoration: none;
   &:focus,
   &:hover {
     color: rgba(#f27126, 0.6);
@@ -42,35 +42,27 @@ footer {
   background-color: #f6f7f6;
   color: #333;
   text-align: left;
-  padding: 1em 1em 1em 1em;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
-header {
+.list {
   display: grid;
-  grid-column-gap: 10px;
-  grid-template-rows: 10px;
-  font-family:"Oswald", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
-  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: #f6f7f6;
-  color: #333;
-}
-
-#header-fixed {
-  width: 100%;
-  padding: 1em 1em 1em 1em;
-  position: fixed;
-  top: 0;
-}
-
-#item1 {
-  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(125px, auto));
+  grid-column-start: 2;
+  grid-column-end: 4;
+  list-style-type: none;
 }
 
 .nav {
   display: grid;
-  grid-auto-flow: column;
-}
-
-.nav > ul > li {
-  display: inline;
+  grid-area: 1/2/2;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(233, 158, 18);
+  position: fixed;
+  padding: 0 0 0 1rem;
+  top: 0;
+  left: 0;
 }
