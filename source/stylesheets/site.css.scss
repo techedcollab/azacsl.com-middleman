@@ -1,16 +1,35 @@
+/* @link https://utopia.fyi/grid/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=xs,xl,2xl,12 */
+
+:root {
+  --grid-max-width: 92.50rem;
+  --grid-gutter: var(--space-xs-l, clamp(0.5625rem, -0.7585rem + 3.5227vw, 2.5rem));
+  --grid-columns: 12;
+}
+
+.u-container {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
+.u-grid {
+  display: grid;
+  gap: var(--grid-gutter);
+}
+
 body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-start: 1;
-  grid-column-end: 3;
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  grid-column-start: 2;
+  grid-column-end: 11;
   background-color: #f6f7f6;
   color: #030303;
   font-family: -apple-system, BlinkMacSystemFont, "Lato",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  margin-top: 8vh;
+  margin-top: 15vh;
 }
 
 a {
@@ -33,20 +52,29 @@ a {
 
 footer {
   display: grid;
-  grid-template-areas: "footer footer footer";
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 4;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  grid-column-start: 2;
+  grid-column-end: 10;
   background-color: #f6f7f6;
   color: #030303;
   text-align: left;
   padding: 1rem 1rem 1rem 1rem;
   margin-top: 5rem;
-  border-top: 2px solid #030303;
+  border-top: solid #030303;
+}
+
+footer ul{
+  display: inline;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li{
+  display: inline;
+  padding-right: 2rem;
 }
 
 .list {
