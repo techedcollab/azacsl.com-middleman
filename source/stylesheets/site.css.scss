@@ -5,7 +5,7 @@
 :root {
   --grid-max-width: 92.50rem;
   --grid-gutter: var(--space-xs-l, clamp(0.5625rem, -0.7585rem + 3.5227vw, 2.5rem));
-  --grid-columns: 12;
+  --grid-columns: 10;
   --main-orange: oklch(60.38% 0.1584 41.6);
   --main-black: oklch(9.18% 0 0);
   --background-white: oklch(97.76% 0.0015 145.56);
@@ -27,15 +27,21 @@ body {
   display: grid;
   max-width: var(--grid-max-width);
   padding-inline: var(--grid-gutter);
-  grid-column-start: 2;
-  grid-column-end: 11;
   background-color: var(--background-white);
   color: var(--main-black);
   font-family: -apple-system, BlinkMacSystemFont, "Lato",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  margin-top: 15vh;
+  margin-top: 17vh;
+}
+
+main {
+  display: grid;
+  position: relative;
+  max-width: 80rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 
 a {
@@ -53,7 +59,7 @@ a {
   text-decoration: none;
   &:focus,
   &:hover {
-    color: rgba(hsl(18, 67%, 48%), 0.9);
+    color: rgba(hsl(18, 67%, 48%), 1);
   }
 }
 
