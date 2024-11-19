@@ -38,10 +38,9 @@ body {
 
 main {
   display: grid;
-  position: relative;
-  max-width: 80rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  max-width: 70rem;
+  margin-left: 11.25rem;
+  margin-right: 11.25rem;
 }
 
 a {
@@ -52,6 +51,19 @@ a {
   &:hover {
     color: rgba(hsl(18, 67%, 48%), 1);
   }
+}
+
+.nav {
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--main-black);
+  position: fixed;
+  padding: 0 0 0 1rem;
+  top: 0;
+  left: 0;
 }
 
 .nav a {
@@ -100,19 +112,6 @@ footer ul li{
   padding: 1rem 1rem 0 1.5rem;
 }
 
-.nav {
-  display: grid;
-  font-family: 'Roboto', sans-serif;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: bold;
-  background-color: var(--main-black);
-  position: fixed;
-  padding: 0 0 0 1rem;
-  top: 0;
-  left: 0;
-}
-
 .logo {
   width: 70px;
   height: 70px;
@@ -133,4 +132,38 @@ button {
     color: var(--main-orange);
     background-color: var(--main-black);
   }
+}
+
+//Responsive Calendar code
+
+.googleCalendar{
+  position: relative;
+  padding-bottom: 35%;
+  padding-top: 35px;
+  height: 0;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .deskContent {display:block;}
+  .phoneContent {display:none;}
+}
+
+@media all and (max-width: 767px) {
+  .deskContent {display:none;}
+  .phoneContent {display:block;}
+}
+
+// Responsive design code for different devices
+
+@media screen and (max-width: 576px) {
+  main {margin-left: 0rem;
+  margin-right: 0rem;}
 }
