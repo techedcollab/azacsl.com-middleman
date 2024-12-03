@@ -83,14 +83,14 @@ footer {
   grid-column-end: 10;
   background-color: var(--background-white);
   color: var(--main-black);
-  text-align: center;
   padding: 1rem 1rem 1rem 1rem;
   margin-top: 5rem;
   border-top: solid var(--main-black);
+  grid-auto-flow: column;
 }
 
 footer ul{
-  display: inline;
+  display: grid;
   position: relative;
   list-style-type: none;
   margin: 0;
@@ -100,7 +100,12 @@ footer ul{
 footer ul li{
   display: inline;
   padding-right: 1.5rem;
+  padding-bottom: .35rem;
   font-weight: bold;
+}
+
+footer div img{
+  max-width: 10rem;
 }
 
 .list {
@@ -166,6 +171,7 @@ button {
 @media screen and (max-width: 576px) {
   main {margin-left: 0rem;
   margin-right: 0rem;}
+  footer {grid-auto-flow: none;}
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
