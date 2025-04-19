@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 4.5'
+gem 'middleman', '~> 4.6'
 gem 'middleman-autoprefixer', '~> 3.0'
 gem 'terser', '~> 1.1'
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
@@ -18,4 +18,8 @@ gem 'strscan', '~> 3.1'
 # gem to implement libsass
 gem 'sassc', '~> 2.4'
 # gem bundler
-gem 'bundler', '~> 2.2.33'
+gem 'bundler', '~> 2.6.8'
+# gem for net-ftp
+gem 'net-ftp', '~> 0.3.8'
+# gem for deploying to Github Pages
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'

@@ -16,6 +16,13 @@ activate :blog do |blog|
   blog.layout = 'blog_layout.erb'
 end
 
+# Deploy website on Github Pages
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.branch = 'master'
+end
+
 # Automattic clowncar image sizes on website
 
 activate :automatic_clowncar,
