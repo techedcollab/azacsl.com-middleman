@@ -21,6 +21,8 @@ end
 activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.branch = 'master'
+  deploy.path = '/docs/'
+  deploy.build_before = true
 end
 
 # Automattic clowncar image sizes on website
